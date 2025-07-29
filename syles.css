@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  background: url(assets/Header\ Background.png) center/ cover no-repeat;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+.header-content h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  color: #ffffff;
+}
+.header-content p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+}
+.btn-white {
+  background-color: #ffffff;
+  color: #23272a; /* cor escura */
+}
+.btn-dark {
+  background-color: #23272a;
+  color: #ffffff;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-1-text h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #23272a;
+}
+.sec-1-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #4f545c;
+}
+.sec-4 {
+  align-items: center;
+}
+.sec-4 h1 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #23272a;
+}
+.sec-4-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #4f545c;
+}
