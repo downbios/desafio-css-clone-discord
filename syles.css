@@ -6,9 +6,10 @@
 html,
 body {
   width: 100%;
-  max-width: 1280px;
+
   margin: 0 auto;
 }
+/*==============HEADER============*/
 header {
   background: url(assets/Header\ Background.png) center/ cover no-repeat;
   height: 460px;
@@ -35,8 +36,6 @@ header {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  line-height: 1;
-  letter-spacing: 0;
   color: #ffffff;
 }
 .buttons {
@@ -62,35 +61,43 @@ button {
   background-color: #23272a;
   color: #ffffff;
 }
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*==============SECTIONS============*/
+.sec-2 {
+  background: #f6f6f6;
 }
-.sec-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sec-1-text h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 1;
-  margin-bottom: 20px;
-  color: #23272a;
-}
-.sec-1-text p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  color: #4f545c;
+.sec-2 .content {
+  flex-direction: row-reverse;
 }
 .sec-4 {
-  align-items: center;
+  background: #f6f6f6;
 }
-.sec-4 h1 {
+.content {
+  display: flex;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 3rem;
+  padding: 60px 20px;
+}
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+.content-text {
+  flex: 1;
+}
+.content-text h1,
+.content-text p {
+  text-align: left;
+}
+.content-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.content-text h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: 800;
@@ -98,9 +105,50 @@ section {
   margin-bottom: 20px;
   color: #23272a;
 }
-.sec-4-text p {
+.content-text p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #4f545c;
+}
+.content-text-2 h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #23272a;
+}
+.content-text-2 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #4f545c;
+}
+/*==============FOOTER============*/
+footer {
+  height: 134px;
+  background-color: #23272a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*==============MEDIAS QUERY============*/
+@media (max-width: 768px) {
+  .content,
+  .content-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-text h1,
+  .content-text p {
+    text-align: center;
+  }
+  .header-content {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .buttons {
+    flex-direction: column;
+  }
 }
